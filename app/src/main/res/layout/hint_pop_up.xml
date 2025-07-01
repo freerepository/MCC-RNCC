@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:gravity="center_horizontal"
+    android:background="@null">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/dimen10"
+    android:paddingLeft="@dimen/dimen10"
+    android:paddingTop="@dimen/dimen20"
+    android:paddingBottom="@dimen/dimen20"
+    android:background="@android:color/transparent"
+    android:text="You can modify Today's load before scoring any coach only,\n Click on Today's Load to modify."
+    android:textSize="20sp"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/dimen30"
+    android:layout_marginRight="@dimen/dimen30"/>
+</LinearLayout>

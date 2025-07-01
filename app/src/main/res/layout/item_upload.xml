@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:paddingBottom="8dp">
+    <TextView
+        android:id="@+id/tv_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:text="Mech coach cleaning"
+        android:background="@drawable/two_corner"/>
+    <TextView
+        android:id="@+id/tv_act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/tv_task"
+        android:text="For : Report"/>
+    <TextView
+        android:id="@+id/tv_trainno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tv_act"
+        android:text="Train No : 5514/234"/>
+    <TextView
+        android:id="@+id/tv_upload_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tv_trainno"
+        android:text="Upload Status : No"/>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tv_upload_status"
+        android:text="Date : 2020-02-21"/>
+    <ImageView
+        android:id="@+id/iv_upload"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_white"
+        android:layout_below="@id/tv_task"
+        android:padding="4dp"
+        android:elevation="8dp"
+        android:src="@drawable/menu_upload"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"/>
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_white"
+        android:padding="4dp"
+        android:elevation="8dp"
+        android:layout_marginTop="32dp"
+        android:src="@android:drawable/ic_delete"
+        android:layout_below="@id/iv_upload"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"/>
+</RelativeLayout>

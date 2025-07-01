@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#fffff8">
+    <TextView
+        android:id="@+id/tv_index_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="13dp"
+        android:gravity="start|center_vertical"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/black"
+        android:text="1"/>
+    <TextView
+        android:id="@+id/tv_index_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:textSize="13dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="start|center_vertical"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/black"
+        android:text="Areas of Cleaning/Services"/>
+
+    <TextView
+        android:id="@+id/tv_qty_per_janitor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textSize="13dp"
+        android:layout_marginStart="4dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@android:color/black"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:text=" "/>
+    <TextView
+        android:id="@+id/et_qty_issued_at_origin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginStart="4dp"
+        android:gravity="start|center_vertical"
+        android:textSize="13dp"
+        android:textColor="@android:color/black"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:text="1500" />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:minWidth="32dp"
+        android:hint="0"
+        android:layout_marginStart="4dp"
+        android:textSize="13sp"
+        android:id="@+id/et_shortfall"
+        android:gravity="center"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:elevation="1dp"
+        android:background="@drawable/et_count_background"
+        tools:ignore="TextFields"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/penality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:minWidth="32dp"
+        android:layout_marginStart="4dp"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:elevation="1dp"
+        android:textColor="@android:color/black"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:text=""
+        android:background="@drawable/et_count_background" />
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:layout_marginEnd="4dp"
+        android:layout_gravity="end|center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/ruppee_text" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:padding="4dp"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:textColor="@color/ColorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cleaning and wiping of toilet area and fittings include wash basins and mirrors.Cleaning of mug in AC coaches etc.">
+    </TextView>
+    <com.whygraphics.multilineradiogroup.MultiLineRadioGroup
+        xmlns:multi_line_radio_group="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rg_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_question"
+        multi_line_radio_group:max_in_row="5" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_question"
+        android:minWidth="48dp"
+        android:hint="0"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="13sp"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:id="@+id/et_shortfall"
+        android:background="@drawable/et_count_back"
+        tools:ignore="TextFields" />
+</RelativeLayout>
